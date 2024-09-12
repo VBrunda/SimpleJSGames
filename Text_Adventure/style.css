@@ -1,0 +1,46 @@
+*::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px hsl(0, 0%, 57%);
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn{
+    background: hsl(150, 100%, 50%);
+    border: 1px solid hsl(150, 100%, 10%);
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+    color:hsl(150, 100%, 10%);
+    transition: background 0.5s ease-in, color 1s ease-out;
+}
+
+.btn:hover{
+    background: green;
+    color: white;
+}
